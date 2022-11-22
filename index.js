@@ -144,6 +144,7 @@ function addmore(){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
 </head>
 
@@ -153,10 +154,10 @@ function addmore(){
             for (let i = 0; i < team.length; i++) {
                 fs.appendFileSync("./dist/team.html",`
             
-               <div id="name">${team[i].name}</div>
+               <div id="name"> NAME: ${team[i].name}</div>
                <div class="card-box">
-               <div id="tId"> ${team[i].id}</div>
-               <div id="email">${team[i].email}</div>
+               <div id="tId"> ID: ${team[i].id}</div>
+               <div id="email">EMAIL: ${team[i].email}</div>
                <div id="special">${team[i].special}</div>
                </div>
             
